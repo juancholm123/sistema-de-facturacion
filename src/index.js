@@ -5,7 +5,6 @@ import path from 'path';
 import url from 'url';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
-
 import index from './routes/index.js';
 
 
