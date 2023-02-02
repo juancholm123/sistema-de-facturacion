@@ -6,6 +6,7 @@ import url from 'url';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import index from './routes/index.js';
+import empresa from './routes/empresa.js';
 
 
 //Path
@@ -42,6 +43,7 @@ app.use(express.json());
 
 //rutas
 app.use(index)
+app.use(empresa)
 
 //public 
 app.use(express.static(path.join(__dirname, "public")))
