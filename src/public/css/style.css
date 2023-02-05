@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-#crear-empresa{
+#crear-empresa {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -106,31 +106,38 @@ option {
     color: white;
 }
 
-.consulta-empresa {
-    /*  position: absolute; */
-    width: 100%;
-    height: 100vh;
-    /*     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+.opciones-empresa {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+     
 }
 
-.contenedor-buscar-empresa {
+/* .consulta-empresa {
+      position: absolute; 
+   width: 100%;
+    height: 100vh; 
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+} */
+
+/* .contenedor-buscar-empresa {
     display: flex;
-    margin-top: 50px;
+     margin-top: 50px;
     width: 100%;
-    justify-content: end;
+    justify-content: start; 
 
 }
-
+ */
 .contenedor-buscar-empresa input {
     border-radius: 30px;
     margin-bottom: 10px;
+   
 }
 
 .contenedor-buscar-empresa a {
-    margin-right: 20px;
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -138,21 +145,13 @@ option {
 
 
 
-.tabla-empresa {
-    width: 82%;
-    height: auto;
-    background-color: #fff5;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 .4rem .8rem #0005;
-    border-radius: .8rem;
-    overflow: hidden;
-}
+
 
 .contenido-tabla-empresa {
     width: 95%;
-    max-height: calc(89% - .8rem);
+    /*  max-height: calc(89% - .8rem); */
     border-radius: .6rem;
-    margin: .8rem auto;
+    /* margin: .8rem auto; */
     overflow: auto;
 }
 
@@ -163,14 +162,11 @@ option {
 
 
 .contenido-tabla-empresa::-webkit-scrollbar-thumb {
-
     border-radius: .5rem;
     background-color: #0004;
     visibility: hidden;
 }
 
 .contenido-tabla-empresa:hover::-webkit-scrollbar-thumb {
-
-
     visibility: hidden;
 }

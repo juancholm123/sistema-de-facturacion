@@ -3,7 +3,6 @@
     .registro-empresa {
         width: 80%;
     }
-
     .contenedor-buscar-empresa input {
         width: 30%;
     }
@@ -64,7 +63,6 @@
 
     .contenedor-buscar-empresa input {
         width: 70%;
-
     }
 }
 
@@ -89,4 +87,5 @@
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    
 }
