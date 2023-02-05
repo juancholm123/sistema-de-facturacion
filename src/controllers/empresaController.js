@@ -2,8 +2,8 @@ const controller = {}
 
 
 
-controller.regsitrar_empresa = (req, res) => {
-    res.render('./empresa/crear')
+controller.index_empresa = (req, res) => {
+    res.render('./empresa/index')
 }
 
 

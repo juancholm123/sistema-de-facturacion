@@ -4,7 +4,7 @@ const router = Router();
 
 
 
-router.get('/registrar-empresa', empresa.regsitrar_empresa)
+router.get('/empresa', empresa.index_empresa)
 
 
 export default router;
