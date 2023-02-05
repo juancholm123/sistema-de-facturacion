@@ -7,6 +7,7 @@
     .contenedor-buscar-empresa input {
         width: 30%;
     }
+
 }
 
 
@@ -15,6 +16,7 @@
     .registro-empresa {
         width: 40%;
     }
+
     .contenedor-buscar-empresa input {
         width: 30%;
     }
@@ -26,9 +28,17 @@
     .registro-empresa {
         width: 65%;
     }
+
     .contenedor-buscar-empresa input {
         width: 30%;
     }
+
+    .contenedor-consultar-empresa {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+
 }
 
 
@@ -37,8 +47,24 @@
     .registro-empresa {
         width: 80%;
     }
+
     .contenedor-buscar-empresa input {
         width: 30%;
+    }
+
+    .contenedor-formulario-empresa {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .contenedor-consultar-empresa {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .contenedor-buscar-empresa input {
+        width: 70%;
+
     }
 }
 
@@ -48,7 +74,19 @@
     .registro-empresa {
         width: 90%;
     }
+
     .contenedor-buscar-empresa input {
-        width: 90%;
+        width: 70%;
+
+    }
+
+    .contenedor-formulario-empresa {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .contenedor-consultar-empresa {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 }

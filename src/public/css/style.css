@@ -5,7 +5,15 @@
     font-family: sans-serif;
 }
 
+#crear-empresa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
+body {
+    /*  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);  */
+}
 
 /* Nav */
 
@@ -25,15 +33,11 @@
     color: rgb(255, 255, 255);
 }
 
-
-
-
-
 /* Crear Empresa */
 
 
 .contenedor-formulario-empresa {
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    /*  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
     display: flex;
     width: 100%;
     height: 100vh;
@@ -98,12 +102,15 @@ option {
 
 
 /* Consultar Empresa */
+.encabezado-empresa {
+    color: white;
+}
 
 .consulta-empresa {
-    position: absolute;
+    /*  position: absolute; */
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    /*     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,6 +118,7 @@ option {
 
 .contenedor-buscar-empresa {
     display: flex;
+    margin-top: 50px;
     width: 100%;
     justify-content: end;
 
@@ -140,40 +148,29 @@ option {
     overflow: hidden;
 }
 
-.contenido-tabla-empresa{
+.contenido-tabla-empresa {
     width: 95%;
     max-height: calc(89% - .8rem);
     border-radius: .6rem;
     margin: .8rem auto;
     overflow: auto;
 }
-.contenido-tabla-empresa::-webkit-scrollbar{
+
+.contenido-tabla-empresa::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
 }
 
 
-.contenido-tabla-empresa::-webkit-scrollbar-thumb{
-    
+.contenido-tabla-empresa::-webkit-scrollbar-thumb {
+
     border-radius: .5rem;
     background-color: #0004;
     visibility: hidden;
 }
-.contenido-tabla-empresa:hover::-webkit-scrollbar-thumb{
-    
+
+.contenido-tabla-empresa:hover::-webkit-scrollbar-thumb {
+
 
     visibility: hidden;
 }
-
-
-/* .tabla-consultar-empresa {
-    background: white;
-}
-
-.contenedor-consulta-empresa{
-    margin-top: 20px;
-}
-.encabezado-empresa{
-    color: white;
-}
- */
