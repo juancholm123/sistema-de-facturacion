@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/* Nav */
+
+.contenedor-logo {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 40px;
+    height: 40px;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* Crear Empresa */
+
+
+.contenedor-formulario-empresa {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro-empresa {
+    height: auto;
+    background-color: #fff5;
+    border-radius: .8rem;
+    padding: 5px 5px 50px 10px;
+    -webkit-box-shadow: 4px -4px 21px 3px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 4px -4px 21px 3px rgba(0, 0, 0, 0.57);
+    box-shadow: 4px -4px 21px 3px rgba(0, 0, 0, 0.57);
+}
+
+.registro-empresa h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.registro-empresa input {
+    border-radius: 30px;
+    height: 30px;
+    background-color: #fff5;
+}
+
+
+
+.registro-empresa select {
+    border-radius: 20px;
+    height: 30px;
+    background-color: #fff5;
+}
+
+.registro-empresa select,
+option {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.registro-empresa textarea {
+    border-radius: 30px;
+    background-color: #fff5;
+}
+
+.btn-registrar-empresa {
+    display: block;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+/* Consultar Empresa */
+
+.consulta-empresa {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-buscar-empresa {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+
+}
+
+.contenedor-buscar-empresa input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.contenedor-buscar-empresa a {
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.tabla-empresa {
+    width: 82%;
+    height: auto;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.contenido-tabla-empresa{
+    width: 95%;
+    max-height: calc(89% - .8rem);
+    border-radius: .6rem;
+    margin: .8rem auto;
+    overflow: auto;
+}
+.contenido-tabla-empresa::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+
+.contenido-tabla-empresa::-webkit-scrollbar-thumb{
+    
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.contenido-tabla-empresa:hover::-webkit-scrollbar-thumb{
+    
+
+    visibility: hidden;
+}
+
+
+/* .tabla-consultar-empresa {
+    background: white;
+}
+
+.contenedor-consulta-empresa{
+    margin-top: 20px;
+}
+.encabezado-empresa{
+    color: white;
+}
+ */

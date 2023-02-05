@@ -1,0 +1,54 @@
+/* Escriotrios muy grandes */
+@media(min-width: 1300px) {
+    .registro-empresa {
+        width: 80%;
+    }
+
+    .contenedor-buscar-empresa input {
+        width: 30%;
+    }
+}
+
+
+/* Escriotrios muy grandes */
+@media(min-width: 1200px) {
+    .registro-empresa {
+        width: 40%;
+    }
+    .contenedor-buscar-empresa input {
+        width: 30%;
+    }
+}
+
+
+/* Tablets en horizontal y escriotrios normales*/
+@media(min-width: 768px) {
+    .registro-empresa {
+        width: 65%;
+    }
+    .contenedor-buscar-empresa input {
+        width: 30%;
+    }
+}
+
+
+/* Movieles en horizontal y tablets en vertical*/
+@media(max-width: 767px) {
+    .registro-empresa {
+        width: 80%;
+    }
+    .contenedor-buscar-empresa input {
+        width: 30%;
+    }
+}
+
+
+/* Movieles  en vertical*/
+@media(max-width: 480px) {
+    .registro-empresa {
+        width: 90%;
+    }
+    .contenedor-buscar-empresa input {
+        width: 90%;
+    }
+}
