@@ -15,7 +15,6 @@
     .registro-empresa {
         width: 40%;
     }
-
     .contenedor-buscar-empresa input {
         width: 30%;
     }
@@ -32,11 +31,7 @@
         width: 30%;
     }
 
-    .contenedor-consultar-empresa {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
+ 
 
 }
 
@@ -51,19 +46,12 @@
         width: 30%;
     }
 
-    .contenedor-formulario-empresa {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .contenedor-consultar-empresa {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
+ 
 
     .contenedor-buscar-empresa input {
         width: 70%;
     }
+
 }
 
 
@@ -75,17 +63,8 @@
 
     .contenedor-buscar-empresa input {
         width: 70%;
-
     }
 
-    .contenedor-formulario-empresa {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
 
-    .contenedor-consultar-empresa {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
     
 }
