@@ -1,3 +1,12 @@
+:root {
+    --login-bg: #f8f3ff;
+    --title-bg: #9089cc;
+    --button-bg: #674baf;
+    --light-pink: #e882e8;
+    --image-bg: #eadbff;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,13 +28,139 @@
     align-items: center;
 }
 
+
+
+
 .contenedor-logo a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.contenedor-navbar a{
+
+.contenedor-navbar a {
     text-decoration: none;
-   
+
+}
+
+
+/* Login */
+
+
+.contenedor-main-login {
+    /*   height: 43.75em;  */
+    /*    width: 60em;  */
+    margin: 6em auto;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 6px 30px 18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 6px 30px 18px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 6px 30px 18px rgba(0, 0, 0, 0.75);
+}
+
+.titulo-inicio-sesion {
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contenedor-login {
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-login  h2{
+    text-align: center;
+}
+
+
+.logo-login {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 90px;
+    height: 90px;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contenedor-logo-login h2 {
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contenedor-logo-login {
+    display: flex;
+    width: 50%;
+    padding: 40px 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.img-login {
+    padding: 2rem;
+    /*  width: 80%;
+    height: 80%; */
+    box-sizing: border-box;
+}
+
+.contenedor-login input {
+    border-radius: 30px;
+    height: 35px;
+    font-weight: 600;
+
+}
+
+.btn-iniciar-sesion {
+
+    width: 80%;
+    height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+
+.formulario-login {
+    width: 80%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+.formulario-login p {
+    text-align: center;
+}
+
+.input-login:hover {
+    border: 2px solid var(--button-bg);
+}
+
+.formulario-login p {
+    margin: 0;
+}
+
+.enlaces-login {
+    text-decoration: none;
 }
 
 
@@ -115,11 +250,13 @@ option {
     margin-bottom: 10px;
     margin-top: 20px;
 }
+
 .contenedor-buscar-empresa a {
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
+
 .contenido-tabla-empresa {
     width: 100%;
     border-radius: .6rem;

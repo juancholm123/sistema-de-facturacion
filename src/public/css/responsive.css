@@ -1,70 +1,67 @@
-/* Escriotrios muy grandes */
-@media(min-width: 1300px) {
-    .registro-empresa {
+@media screen and (min-width:1201px) {
+    /* Login */
+    .contenedor-main-login {
         width: 80%;
-    }
-    .contenedor-buscar-empresa input {
-        width: 30%;
+        height: 100vh;
     }
 
-}
-
-
-/* Escriotrios muy grandes */
-@media(min-width: 1200px) {
-    .registro-empresa {
-        width: 40%;
-    }
-    .contenedor-buscar-empresa input {
-        width: 30%;
-    }
-}
-
-
-/* Tablets en horizontal y escriotrios normales*/
-@media(min-width: 768px) {
-    .registro-empresa {
-        width: 65%;
-    }
-
-    .contenedor-buscar-empresa input {
-        width: 30%;
-    }
-
- 
-
-}
-
-
-/* Movieles en horizontal y tablets en vertical*/
-@media(max-width: 767px) {
-    .registro-empresa {
-        width: 80%;
-    }
-
-    .contenedor-buscar-empresa input {
-        width: 30%;
-    }
-
- 
-
-    .contenedor-buscar-empresa input {
-        width: 70%;
+    .img-login {
+        width: 45%;
+        height: 45%;
     }
 
 }
 
-
-/* Movieles  en vertical*/
-@media(max-width: 480px) {
-    .registro-empresa {
+@media screen and (min-width:1025px) and (max-width:1200px) {
+      /* Login */
+      .contenedor-main-login {
         width: 90%;
+        height: 100vh;
     }
 
-    .contenedor-buscar-empresa input {
-        width: 70%;
+    .img-login {
+        width: 60%;
+        height: 60%;
     }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    /* Login */
+    .contenedor-main-login {
+      width: 95%;
+      height: 100vh;
+  }
+
+  .img-login {
+      width: 70%;
+      height: 70%;
+  }
+}
 
 
-    
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    /* Login */
+    .contenedor-main-login {
+      width: 95%;
+      height: 100vh;
+  }
+
+  .img-login {
+      width: 100%;
+      height: 100%;
+  }
+}
+
+@media screen  and (max-width:480px) {
+    /* Login */
+   /*  .contenedor-main-login {
+      width: 95%;
+      height: 100vh;
+  }
+
+  .img-login {
+      width: 100%;
+      height: 100%;
+  } */
 }
