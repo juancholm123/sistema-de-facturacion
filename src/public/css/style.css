@@ -23,8 +23,8 @@ body {
     flex-wrap: wrap;
     color: white;
     background: transparent;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     /*   color: black; */
     /*     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
     border: 2px solid rgba(0, 0, 0, 0.2);
