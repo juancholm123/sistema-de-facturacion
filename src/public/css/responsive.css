@@ -2,10 +2,22 @@
     .contenedor-principal-login {
         width: 90%;
     }
-
     .img-login {
         width: 150px;
         height: 150px;
+    }
+}
+
+
+@media screen and (max-width:570px) {
+    .enlaces-clave {
+        display: block;
+    }
+    .input-login {
+        width: 60%;
+    }
+    .label-login {
+        margin: 0 auto;
     }
 
 
