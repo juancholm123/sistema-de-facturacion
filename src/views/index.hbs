@@ -1,35 +1,33 @@
 <section class="seccion-login">
-    <div class="contenedor-main-login">
 
-        <div class="contenedor-login">
-            <h2 class="titulo-inicio-sesion">Iniciar Sesión</h2>
-            <div class="formulario-login">
-                <div class="mb-3">
-                    <label for="usuario" class="form-label">Usuario </label>
-                    <input type="text" class="form-control input-login" id="usuario" placeholder="Digite su usuario">
-                </div>
 
-                <div class="mb-3">
-                    <label for="clave" class="form-label">Contraseña </label>
-                    <input type="password" class="form-control input-login" id="clave"
-                        placeholder="Digite su contraseña">
-                </div>
-                <p>¿Has olvidado tu contraseña? <a href="#" class="enlaces-login"><span class="span">Click Aquí</span></a> </p>
-                <button class="btn-iniciar-sesion" id="btn-registrar-empresa">Registrar</button>
-                <p>¿No tienes una cuenta? <a href="#" class="enlaces-login"><span class="span">Registrate Aquí</span></a> </p>
-            </div>
+  <div class="contenedor-principal-login ">
 
-        </div>
-        <div class="contenedor-logo-login" >
-            <div class="logo-login">JL</div>
-            <h2 class="facturacion-login">Sistema de Facturación</h2>
-            <img class="img-login" src="img/login.svg" alt="avatar">
-        </div>
+    <img class="img-login" src="img/login-avatar.png" alt="">
 
+    <h1 class="iniciar-sesion">Iniciar Sesión</h1>
+
+    <div class="grupo-login mt-3 ">
+      <label class="label-login" for="usuario">Usuario</label>
+      <input class="input-login" type="text" name="usuario" id="usuario" placeholder="Usuario">
     </div>
 
+    <div class="grupo-login mt-3 ">
+      <label class="label-login" for="clave">Contraseña</label>
+      <input class="input-login" type="password" name="clave" id="clave" placeholder="Contraseña">
+    </div>
+
+    <div class="checkbox-login">
+      <input type="checkbox" class="opciones-login ">
+      <p class="recordar-credenciales">Recordar mis crendeicales </p>
+      <p class="opciones-login  olvide-clave">¿Has olvidado tu contraseña? <a href="#" class="enlaces-clave"><span>Click
+            Aquí</span></a> </p>
+    </div>
+
+    <button class="btn-iniciar-sesion">Iniciar</button>
 
 
 
+  </div>
 
 </section>
