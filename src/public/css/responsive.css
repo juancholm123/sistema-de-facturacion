@@ -18,6 +18,18 @@
     }
     .label-login {
         margin: 0 auto;
+        margin-bottom: 5px;
+       
+    }
+
+
+}
+
+
+@media screen and (max-height:700px) {
+    .contenedor-principal-login{
+        margin-top: 200px;
+     
     }
 
 
