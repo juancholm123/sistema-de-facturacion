@@ -3,6 +3,54 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+/*------------ NABVAR ------------ */
+.navbar-menu {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+
+}
+
+.nabvar-principal {
+    background: rgba(31, 69, 143, 255);
+}
+
+
+
+.contenedor-logo {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 100%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    -webkit-box-shadow: -4px -1px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px -1px 17px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px -1px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor-logo a {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.texto-navbar {
+    font-weight: 700;
+}
+
+.btn-menu {
+    font-weight: 700;
+    border-style: none;
+    background: none;
+    margin-right: 20px;
+}
+
+/*------------ NABVAR ------------ */
+
+/*------------ LOGIN ------------ */
 .seccion-login {
     display: flex;
     width: 100%;
@@ -25,8 +73,6 @@ body {
     background: transparent;
     margin-top: 20px;
     margin-bottom: 20px;
-    /*   color: black; */
-    /*     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -111,3 +157,164 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+
+/*------------ LOGIN ------------ */
+
+
+/*------------ PEDIDO------------ */
+.opciones-pedido a {
+    text-decoration: none;
+    color: black;
+}
+
+.pedido {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(161, 181, 222, 255);
+}
+
+.contendor-main-pedido {
+    margin-bottom: 50px;
+}
+
+
+.contendor-pedido {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    -webkit-box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.62);
+}
+
+
+.grupo-pedido {
+    margin: 5px 30px;
+    font-weight: 600;
+}
+
+.campo-producto {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.campo-producto::placeholder {
+    padding-left: 10px;
+}
+
+.titulo-producto {
+    margin: 5px 30px;
+}
+
+.label-producto {
+    margin-left: 5px;
+}
+
+.btn-agregar-producto {
+    border-radius: 30px;
+    width: 50%;
+    margin-right: 30px;
+}
+
+.contenedor-btn-agregar-prodcuto {
+
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.titulo-lista-producto {
+    margin-top: 5px;
+}
+
+.contenedor-lista-pedido {
+
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: auto;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 30px;
+    -webkit-box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.62);
+}
+
+.ver-producto {
+    margin-right: 10px;
+
+}
+
+.enlace-prducto {
+    font-size: 17px;
+}
+
+.contenedor-titulo-producto {
+    display: flex;
+}
+
+.info-producto {
+
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    flex-wrap: wrap;
+
+   
+
+}
+
+.texto-info-producto {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.encabezado-lista-producto {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-pedido {
+    border-radius: 30px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.contenedor-botones-pedido {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+
+.menu-pedido {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-lista-del-pedido {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*------------ PEDIDO ------------ */

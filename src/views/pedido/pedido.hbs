@@ -1,0 +1,413 @@
+{{>navbar}}
+<section id="pedido" class="pedido">
+    <ul class="nav nav-tabs container mt-3 menu-pedido" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Realizar Pedido</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Lista Pedidos</button>
+        </li>
+
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container contendor-main-pedido">
+                <div class="contendor-pedido">
+
+
+                    <div class="contenedor-titulo-producto">
+                        <h4 class="titulo-producto">Producto</h4>
+                        <div class="info-producto">
+                            <h6 class="texto-info-producto">Precio: 2000</h6>
+                            <h6 class="texto-info-producto">Precio total: 5000</h6>
+                            <h6 class="texto-info-producto">Estado: Diponible</h6>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="grupo-pedido">
+                                <label for="select-producto" class="label-producto">Producto</label>
+                                <select name="select-prodcuto" id="select-producto"
+                                    class="campo-producto select-producto ">
+                                    <option value="1">Seleccione un producto</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="grupo-pedido">
+                                <label for="select-medida" class="label-producto">Medida</label>
+                                <select name="select-prodcuto" id="select-medida"
+                                    class="campo-producto select-prodcuto ">
+                                    <option value="1">Seleccione la medida del producto</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="grupo-pedido">
+                                <label for="select-empresa" class="label-producto">Empresa</label>
+                                <select name="select-empresa" id="select-empresa"
+                                    class="campo-producto select-prodcuto ">
+                                    <option value="1">Seleccione la empresa</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="grupo-pedido">
+                                <label for="cantidad" class="label-producto">Cantidad</label>
+                                <input type="number" id="cantidad" class="campo-producto"
+                                    placeholder="Ingrese la cantidad">
+                            </div>
+                        </div>
+                  
+                    </div>
+                    <div class="grupo-pedido">
+                        <label for="descripcion-producto" class="label-producto">Descripcion</label>
+                        <textarea name="descripcion-producto" id="descripcion-producto"
+                            class="campo-producto  descipcion-producto " placeholder="Describa el producto"></textarea>
+                    </div>
+                    <div class="contenedor-btn-agregar-prodcuto">
+                        <button class="btn-agregar-producto">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="contenedor-lista-pedido">
+
+                    <div class="encabezado-lista-producto mt-3">
+                        <h4 class="titulo-lista-producto">Lista de productos</h4>
+                        <h4>Estado:Pendiente</h4>
+                        <h4>Total:56000</h4>
+                        <h4>Fecha:27/02/2023</h4>
+                    </div>
+
+                    <hr>
+                    <table class="table lista-productos ">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Empresa</th>
+                                <th scope="col">Medida</th>
+                                <th scope="col">Precio unitario</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Opciones</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+
+                    <hr>
+
+                    <div class="contenedor-botones-pedido">
+                        <button class="boton-pedido">Enviar</button>
+                        <button class="boton-pedido">Eliminar</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container contendor-main-pedido mt-3">
+                <div class="contenedor-lista-pedido contenedor-lista-del-pedido">
+
+
+                    <div class="encabezado-lista-producto mt-3">
+                        <h4 class="titulo-lista-producto">Lista de productos</h4>
+                        <h4>Estado:Pendiente</h4>
+                        <h4>Total:56000</h4>
+                        <h4>Fecha:27/02/2023</h4>
+                    </div>
+                    <hr>
+                    <table class="table lista-productos ">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Empresa</th>
+                                <th scope="col">Medida</th>
+                                <th scope="col">Precio unitario</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Opciones</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="contenedor-botones-pedido">
+                        <button class="boton-pedido">Actualizar</button>
+                        <button class="boton-pedido">Cancelar</button>
+                    </div>
+
+
+                </div>
+
+                <div class="contenedor-lista-pedido contenedor-lista-del-pedido ">
+
+
+                    <div class="encabezado-lista-producto mt-3">
+                        <h4 class="titulo-lista-producto">Lista de productos</h4>
+                        <h4>Estado:Pendiente</h4>
+                        <h4>Total:56000</h4>
+                        <h4>Fecha:27/02/2023</h4>
+                    </div>
+                    <hr>
+                    <table class="table lista-productos ">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Empresa</th>
+                                <th scope="col">Medida</th>
+                                <th scope="col">Precio unitario</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Opciones</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>xxxxx</td>
+                                <td>
+                                    <div class="opciones-producto">
+                                        <a href="#" class="enlace-prducto ver-producto"> <i
+                                                class="fa-sharp fa-solid fa-eye"></i></a>
+                                        <a href="#" class="enlace-prducto eliminar-producto"> <i
+                                                class="fa-solid fa-trash"></i></a>
+
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="contenedor-botones-pedido">
+                        <button class="boton-pedido">Actualizar</button>
+                        <button class="boton-pedido">Cancelar</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</section>

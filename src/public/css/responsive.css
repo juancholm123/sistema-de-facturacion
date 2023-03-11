@@ -1,7 +1,9 @@
+/* ---------Login----------- */
 @media screen and (max-width:600px) {
     .contenedor-principal-login {
         width: 90%;
     }
+
     .img-login {
         width: 150px;
         height: 150px;
@@ -13,13 +15,15 @@
     .enlaces-clave {
         display: block;
     }
+
     .input-login {
         width: 60%;
     }
+
     .label-login {
         margin: 0 auto;
         margin-bottom: 5px;
-       
+
     }
 
 
@@ -27,10 +31,31 @@
 
 
 @media screen and (max-height:700px) {
-    .contenedor-principal-login{
+    .contenedor-principal-login {
         margin-top: 200px;
-     
+
     }
 
 
 }
+
+/* ---------Login----------- */
+
+
+/* ---------Factura----------- */
+@media screen and (min-width:1200px) {
+    .btn-pedido{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .btn-pedido{
+        width: 50%;
+    }
+}
+
+
+
+/* ---------Factura----------- */

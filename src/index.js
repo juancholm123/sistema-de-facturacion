@@ -7,6 +7,9 @@ import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import index from './routes/index.js';
 import empresa from './routes/empresa.js';
+import factura from './routes/factura.js';
+import autenticacion from './routes/auntenticacion.js';
+import pedido from './routes/pedido.js';
 
 
 //Path
@@ -44,6 +47,9 @@ app.use(express.json());
 //rutas
 app.use(index)
 app.use(empresa)
+app.use(factura)
+app.use(autenticacion)
+app.use(pedido)
 
 //public 
 app.use(express.static(path.join(__dirname, "public")))
