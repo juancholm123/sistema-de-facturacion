@@ -1,11 +1,22 @@
 import { Router } from 'express';
-import controller from '../controllers/pedidoController.js';
+import PedidoController from '../controllers/pedidoController.js';
 const router = Router();
+var pedidoController = new PedidoController()
+
+
+router.get('/pedido', pedidoController.vista_pedido);
 
 
 
-router.get('/pedido', controller.vista_pedido)
-router.post('/inicializar-datos-pedido', controller.InicializarDatos)
+
+
+
+
+/* router.post('/producto-por-empresa-por-medida', controller.ConsultarProductoPorEmpresaPorMedida); 
+router.post('/mostrar-producto-por-empresa', controller.MostarProductoPorEmpresa);
+router.post('/mostrar-medida-por-producto', controller.MostarMedidaPorProducto);
+  */
+
 
 
 

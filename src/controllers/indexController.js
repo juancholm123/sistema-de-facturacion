@@ -1,9 +1,9 @@
-const controller = {};
 
+export default class IndexController {
+     constructor() {
 
-controller.index = (req,res) => {
-     res.render('./index') 
+     }
+     index = (req, res) => {
+          res.render('./index')
+     }
 }
-
-export default controller;
-

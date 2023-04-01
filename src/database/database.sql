@@ -49,17 +49,16 @@ alter table producto add column producto varchar(50) not null;
 alter table producto add column descripcion text not null;
 alter table producto add column estado enum('AGOTADO','DISPONIBLE') not null;
 
-create table precio(id_precio int not null);
-alter table precio add column fk_producto int not null;
-alter table precio add column fk_medida int not null;
-alter table precio add column precio double not null;
+
 
 create table medida(id_medida int not null);
 alter table medida add column medida varchar(50)  not null;
 
 create table medida_tiene_producto(id_medida int not null);
 alter table medida_tiene_producto add column id_producto int  not null;
-alter table medida_tiene_producto add column estado boolean  not null;
+alter table medida_tiene_producto add column precio double not null;
+alter table medida_tiene_producto add column cantidad int not null;
+alter table medida_tiene_producto add column estado enum("DISPONIBLE","AGOTADO") not null;
 
 create table pedido(id_pedido int not null);
 alter table pedido add column fk_persona int  not null;
@@ -83,9 +82,10 @@ alter table empresa add constraint pk_empresa primary key(id_empresa);
 alter table pedido add constraint pk_pedido primary key(id_pedido);
 alter table producto add constraint pk_producto primary key(id_producto);
 alter table medida add constraint pk_medida primary key(id_medida);
-alter table precio add constraint pk_precio primary key(id_precio);
+
 alter table persona_pertenece_empresa add constraint pk_persona_pertenece_empresa primary key(id_persona, id_empresa);
 alter table pedido_tiene_producto add constraint pk_pedido_tiene_producto primary key(id_pedido, id_producto);
+
 alter table medida_tiene_producto add constraint pk_medida_tiene_producto primary key(id_medida, id_producto);
 
 ----Auto Increment----
@@ -99,7 +99,7 @@ alter table empresa modify id_empresa int auto_increment;
 alter table pedido modify id_pedido int auto_increment;
 alter table producto modify id_producto int auto_increment;
 alter table medida modify id_medida int auto_increment;
-alter table precio modify id_precio int auto_increment;
+
 ----Laves Foraneas----
 alter table persona add constraint fk_p_rol foreign key(fk_rol)references rol(id_rol);
 alter table persona add constraint fk_p_municipio foreign key(fk_municipio)references municipio(id_municipio);
@@ -110,8 +110,6 @@ alter table direccion add constraint fk_d_empresa foreign key(fk_empresa)referen
 alter table empresa add constraint fk_e_municipio foreign key(fk_municipio)references municipio(id_municipio);
 alter table pedido add constraint fk_pe_persona foreign key(fk_persona)references persona(id_persona);
 alter table producto add constraint fk_pro_empresa foreign key(fk_empresa)references empresa(id_empresa);
-alter table  precio add constraint fk_pre_producto foreign key(fk_producto)references producto(id_producto); 
-alter table  precio add constraint fk_pre_medida foreign key(fk_medida)references medida(id_medida); 
 alter table persona_pertenece_empresa add constraint fk_persona_pertenece_empresa foreign key(id_empresa)references empresa(id_empresa);
 alter table persona_pertenece_empresa add constraint fk_empre_pertenece_perso foreign key(id_persona)references persona(id_persona); 
 alter table  pedido_tiene_producto add constraint fk_pedido_tiene_producto foreign key(id_pedido)references pedido(id_pedido); 
@@ -126,6 +124,7 @@ insert into rol(rol,estado)values('TRABAJADOR',1);
 insert into rol(rol,estado)values('CLIENTE',1);
 
 insert into persona (fk_rol,fk_municipio,documento,p_nombre,s_nombre,p_apellido,s_apellido)values(1,365,1117552690,'JUAN','CAMILO','LOPEZ',' MARIN');
+insert into persona (fk_rol,fk_municipio,documento,p_nombre,s_nombre,p_apellido,s_apellido)values(1,365,1117552690,'LUIS','ANTONIO','ORTEGA','VALENCIA');
 
 insert into empresa (fk_municipio,empresa,descripcion)values(365,'JL','EMPRESA DEDICADA AL DESARROLLO DE SOFTWARE');
 
@@ -134,22 +133,43 @@ insert into empresa (fk_municipio,empresa,descripcion)values(365,'JP','EMPRESA D
 insert into empresa (fk_municipio,empresa,descripcion)values(365,'JS','EMPRESA DEDICADA AL DESARROLLO DE SOFTWARE');
 
 insert into persona_pertenece_empresa(id_persona,id_empresa,fecha,estado)values(1,1,NOW(),1);
+insert into persona_pertenece_empresa(id_persona,id_empresa,fecha,estado)values(1,2,NOW(),1);
 
 insert into medida(medida)values('UNIDAD');
 insert into medida(medida)values('KG');
-insert into medida(medida)values('LG');
+insert into medida(medida)values('LB');
 insert into medida(medida)values('ARROBA');
 
 
+insert into producto(fk_empresa,producto,descripcion)values(1,'PAPA AMARILLA','PAPA AMARILLA EN EXCELENTE ESTADO'); 
 
-insert into producto(fk_empresa,producto,descripcion,estado)values(1,'PAPA AMARILLA','PAPA AMARILLA EN EXCELENTE ESTADO',2); 
+insert into producto(fk_empresa,producto,descripcion)values(1,'ARROZ','ARROZ EN EXCELENTE ESTADO'); 
+insert into producto(fk_empresa,producto,descripcion)values(2,'FRIJOLES','FRIJOLES EN EXCELENTE ESTADO'); 
 
-insert into precio(fk_producto,fk_medida,precio)values(1,2,2000);
+insert into producto(fk_empresa,producto,descripcion)values(3,'LENTEJAS','LENTEJAS EN EXCELENTE ESTADO'); 
+
+
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(4,2,20000,100,1);
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(3,2,2500,100,1);
+
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(3,1,2000,100,1);
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(2,1,5000,100,1);
+
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(3,3,25000,100,1);
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(4,3,30000,100,1);
+
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(2,4,1500,100,1);
+insert into medida_tiene_producto(id_medida,id_producto, precio, cantidad,estado)values(4,4,25000,100,1);
+
 
 insert into telefono(fk_persona,numero)values(1,3222189406); 
+insert into telefono(fk_persona,numero)values(2,3222189406); 
 
 insert into direccion(fk_persona,direccion,barrio)values(1,'CARRERA13A#10A49','JUAN XXlll'); 
+insert into direccion(fk_persona,direccion,barrio)values(2,'CARRERA13A#10A49','JUAN XXlll'); 
+
 insert into direccion(fk_empresa,direccion,barrio)values(1,'CARRERA13A#10A49','JUAN XXlll'); 
+insert into direccion(fk_empresa,direccion,barrio)values(2,'CARRERA13A#10A49','JUAN XXlll'); 
 
 
 

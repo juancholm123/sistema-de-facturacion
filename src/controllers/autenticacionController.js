@@ -1,18 +1,17 @@
-const controller = {}
 
 
+export default class AutenticacionController {
+    constructor() {
 
-controller.login = (req, res) => {
-     res.render('./autenticacion/login') 
-  
+    }
+
+    login = (req, res) => {
+        res.render('./autenticacion/login')
+
+    }
+
+    registro = (req, res) => {
+        res.render('./autenticacion/registro')
+    }
+
 }
-
-controller.registro = (req, res) => {
-    res.render('./autenticacion/registro')
-}
-
-
-
-
-
-export default controller
